@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
 <title>Андрей и Наталья — 21 июня 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -29,6 +30,7 @@
 
   body {
     background: var(--cream);
+    color-scheme: light only;
     font-family: 'Baloo 2', sans-serif;
     color: var(--text);
     overflow-x: hidden;
@@ -867,6 +869,7 @@
 
   body {
     background: var(--cream);
+    color-scheme: light only;
     font-family: 'Baloo 2', sans-serif;
     color: var(--text);
     overflow-x: hidden;
@@ -1760,6 +1763,7 @@
 
   body {
     background: var(--cream);
+    color-scheme: light only;
     font-family: 'Baloo 2', sans-serif;
     color: var(--text);
     overflow-x: hidden;
@@ -2957,6 +2961,29 @@
   .ci-lg {
     width: 2em;
     height: 2em;
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #f8f7f2;
+      --pink: #d75a89;
+      --pink-light: #e89ab8;
+      --yellow: #dead00;
+      --orange: #d57648;
+      --text: #8a696e;
+      --text-light: #a08888;
+      --green: #8aab7a;
+    }
+    body {
+      background: #f8f7f2 !important;
+      color: #8a696e !important;
+    }
+    .card-section, .form-card, .wf-option, .info-card,
+    .check-item, .map-btn, .hero-info-pill {
+      background: white !important;
+      color: #8a696e !important;
+    }
   }
 
 </style>
